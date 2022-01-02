@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="player">
+
+            <!-- Video -->
+            <video poster="images/poster.jpg" muted src="https://media.w3.org/2010/05/sintel/trailer.mp4" id="video"></video>
+                        
+            <!-- Overlay -->
+            <div class="player-overlay">
+                
+                <!-- Titulo -->
+                <h2 class="player-title">Música para programar</h2>
+
+                <!-- Botones -->
+                <div class="player-actions">
+                    <!-- Backward -->
+                    <button class="button" id="backward" aria-label="Retrocede 10 Segundos" title="Retroceder 10 Segundos"></button>
+                    <!-- Play -->
+                    <button class="button" id="play" aria-label="Reproducir Video" title="Reproducir"></button>
+                    <!-- Pause -->
+                    <button class="button" hidden id="pause" aria-label="Pausar Video" title="Pausar"></button>
+                    <!-- Forward -->
+                    <button class="button" id="forward" aria-label="Adelanta 10 Segundos" title="Adelantar 10 Segundos"></button>
+                </div>       
+
+                <!-- Progress -->
+                <div class="player-progress">
+                    <input type="range" value="0" min="0" step="1" id="progress">
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
